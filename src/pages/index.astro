@@ -789,7 +789,7 @@
 		overflow-x: auto;
 	}
 
-	.week-column {
+	:global(.week-column) {
 		display: grid;
 		grid-template-rows: repeat(7, 1fr);
 		gap: 3px;
@@ -797,7 +797,7 @@
 		animation-delay: calc(var(--week-index, 0) * 13ms);
 	}
 
-	.contribution-day {
+	:global(.contribution-day) {
 		display: block;
 		aspect-ratio: 1;
 		min-width: 3px;
@@ -805,42 +805,42 @@
 		background: #25263b;
 	}
 
-	.contribution-day[data-level='1'] {
+	:global(.contribution-day[data-level='1']) {
 		background: #064b45;
 		box-shadow: 0 0 3px #00ffd533;
 	}
 
-	.contribution-day[data-level='2'] {
+	:global(.contribution-day[data-level='2']) {
 		background: #07866c;
 		box-shadow: 0 0 5px #00ffd566;
 	}
 
-	.contribution-day[data-level='3'] {
+	:global(.contribution-day[data-level='3']) {
 		background: #00bd8c;
 		box-shadow: 0 0 7px #00ffd599;
 	}
 
-	.contribution-day[data-level='4'] {
+	:global(.contribution-day[data-level='4']) {
 		background: #7fffd4;
 		box-shadow: 0 0 10px #00ffd5, 0 0 16px #00ffd566;
 	}
 
-	.player-card:nth-child(2) .contribution-day[data-level='1'] {
+	.player-card:nth-child(2) :global(.contribution-day[data-level='1']) {
 		background: #4a1747;
 		box-shadow: 0 0 3px #ff4fd833;
 	}
 
-	.player-card:nth-child(2) .contribution-day[data-level='2'] {
+	.player-card:nth-child(2) :global(.contribution-day[data-level='2']) {
 		background: #87166b;
 		box-shadow: 0 0 5px #ff4fd866;
 	}
 
-	.player-card:nth-child(2) .contribution-day[data-level='3'] {
+	.player-card:nth-child(2) :global(.contribution-day[data-level='3']) {
 		background: #ca268a;
 		box-shadow: 0 0 7px #ff4fd899;
 	}
 
-	.player-card:nth-child(2) .contribution-day[data-level='4'] {
+	.player-card:nth-child(2) :global(.contribution-day[data-level='4']) {
 		background: #ff78b9;
 		box-shadow: 0 0 10px #ff4fd8, 0 0 16px #ff4fd866;
 	}
